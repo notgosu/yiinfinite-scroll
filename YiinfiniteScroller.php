@@ -40,6 +40,7 @@ class YiinfiniteScroller extends CBasePager {
             $this->registerClientScript();
             $this->createInfiniteScrollScript();
             $this->renderNavigation();
+	        $this->currentPage++;
         }
 
         if($this->currentPageDoesntExists()) {
